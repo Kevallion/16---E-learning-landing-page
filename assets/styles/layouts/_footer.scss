@@ -1,0 +1,25 @@
+footer {
+  
+  width: 100%;
+  min-height: 120px;
+  background: $color2;
+  display: flex;
+  align-items: center;
+  .footer-content {
+    @media screen and (max-width:1172px) {
+        max-width: 689px;
+        }  
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        object-fit: contain;
+    }
+    button{
+        background: $gradient2;
+    }
+  }
+}

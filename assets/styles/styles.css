@@ -1,0 +1,298 @@
+/************ COLORS ***************/
+/************ FONTS ****************/
+@font-face {
+  font-family: "Jakarta";
+  src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+/************ GENERAL PARAMETERS *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Jakarta, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #83869A;
+  position: relative;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 1172px) {
+  body {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+body::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(13, 5, 54, 0.041)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, rgba(13, 5, 54, 0.041), rgba(255, 255, 255, 0));
+  left: 0;
+  height: 55%;
+  min-width: 1440px;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: #13183F;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 70px;
+}
+@media screen and (max-width: 1172px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 51px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+@media screen and (max-width: 1172px) {
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+}
+@media screen and (max-width: 1172px) {
+  h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 32px;
+  }
+}
+
+a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+a:visited {
+  color: #FFFFFF;
+}
+
+button {
+  padding: 14px 32px;
+  border-radius: 100px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 1172px) {
+  button {
+    padding: 9px 24px;
+  }
+}
+button:hover {
+  opacity: 0.7;
+}
+
+header {
+  margin: 39px auto 226px;
+  max-width: 1110px;
+}
+@media screen and (max-width: 1172px) {
+  header {
+    margin: 24px auto 186px;
+    max-width: 689px;
+  }
+}
+header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: url(../images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: container;
+  width: 991.63px;
+  height: 936.92px;
+  right: -270px;
+  top: -180px;
+}
+@media screen and (max-width: 1172px) {
+  header::after {
+    background: url(../images/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 640.71px;
+    height: 640px;
+    right: -235px;
+    top: -50px;
+  }
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 186px;
+}
+@media screen and (max-width: 1172px) {
+  header nav {
+    margin-bottom: 99px;
+  }
+}
+header nav img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav button {
+  background-color: #13183F;
+  cursor: pointer;
+}
+header .header-content {
+  max-width: 457px;
+}
+@media screen and (max-width: 1172px) {
+  header .header-content {
+    max-width: 398px;
+  }
+}
+header .header-content p {
+  margin: 29px 0 40px;
+}
+@media screen and (max-width: 1172px) {
+  header .header-content p {
+    margin: 25px 0;
+  }
+}
+header .header-content button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#F02AA6), to(#FF6F48));
+  background: linear-gradient(to top, #F02AA6, #FF6F48);
+}
+
+main {
+  margin: 0 auto 140px;
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 56px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+@media screen and (max-width: 1172px) {
+  main {
+    margin: 0 auto 86px;
+    max-width: 689px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 56px;
+  }
+}
+main .card:first-child {
+  background: -webkit-gradient(linear, left bottom, left top, from(#F02AA6), to(#FF6F48));
+  background: linear-gradient(to top, #F02AA6, #FF6F48);
+}
+main .card:first-child h2 {
+  color: #FFFFFF;
+}
+main .card {
+  border-radius: 16px;
+  -webkit-box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0823529412);
+          box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0823529412);
+  padding: 64px 32px 80px;
+  position: relative;
+}
+@media screen and (max-width: 1172px) {
+  main .card {
+    padding: 56px 32px 56px;
+  }
+}
+main .card img {
+  position: absolute;
+  top: -28.5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .card p {
+  margin: 24px 0;
+}
+@media screen and (max-width: 1172px) {
+  main .card p {
+    margin: 16px 0;
+  }
+}
+main .card a {
+  color: #F74780;
+  position: absolute;
+  bottom: 40px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 1172px) {
+  main .card a {
+    bottom: 32px;
+  }
+}
+main .card a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+  min-height: 120px;
+  background: #13183F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1172px) {
+  footer .footer-content {
+    max-width: 689px;
+  }
+}
+footer .footer-content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .footer-content button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4851FF), to(#F02AA6));
+  background: linear-gradient(to bottom, #4851FF, #F02AA6);
+}/*# sourceMappingURL=styles.css.map */

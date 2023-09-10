@@ -1,0 +1,106 @@
+/************ COLORS ***************/
+$color1:#666CA3;
+$color2:#13183F;
+$color3:#83869A;
+$color4:#F74780;
+$color5:#FFA7C3;
+$white1:#FFFFFF;
+
+$gradient1: linear-gradient(to top,#F02AA6,#FF6F48) ;
+$gradient2:linear-gradient(to bottom,#4851FF,#F02AA6);
+
+/************ FONTS ****************/
+@font-face {
+    font-family: "Jakarta";
+    src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+$font1: Jakarta, sans-serif;
+
+/************ GENERAL PARAMETERS *************/
+
+@mixin fontStyle($sizeFont,$fontWeight,$lineHeight){
+    font-size: $sizeFont;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    @media screen and (max-width:1172px) {
+        @include fontStyle(16px, 500, 26px);
+    }
+
+    font-family: $font1;
+    @include fontStyle(18px, 500, 28px);
+    color:  $color3;
+    position: relative;
+    overflow-x: hidden;
+    &::after{
+        position: absolute;
+        z-index: -1;
+        content: "";
+        bottom: 0;
+        background: linear-gradient(to top, rgba(13, 5, 54, 0.041), rgba(255, 255, 255, 0));
+        left: 0;
+        height: 55%;
+        min-width: 1440px;
+        width: 100%
+    }
+}
+
+h1, h2, h3{
+    color: $color2;
+}
+h1{
+    @media screen and (max-width:1172px) {
+        @include fontStyle(40px, 800, 51px);
+    }
+    @include fontStyle(56px, 800, 70px);
+}
+
+h2{
+    @media screen and (max-width:1172px) {
+        @include fontStyle(24px, 800, 32px);
+    }
+    @include fontStyle(32px, 800, 40px);
+}
+
+h3{
+    @media screen and (max-width:1172px) {
+        @include fontStyle(20px, 800, 32px);
+    }
+    @include fontStyle(24px, 800, 28px);
+}
+
+a{
+    @include fontStyle(18px, 700, 28px);
+    text-decoration: none;
+    color: $white1;
+    &:visited{
+        color: $white1;
+    }
+}
+
+button{
+    @media screen and (max-width:1172px) {
+       padding: 9px 24px;
+    }
+    padding: 14px 32px;
+    border-radius: 100px;
+    color: $white1;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}

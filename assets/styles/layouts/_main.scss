@@ -1,0 +1,61 @@
+main{
+    @media screen and (max-width:1172px) {
+        margin: 0 auto 86px;
+        max-width: 689px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        column-gap: 10px;
+        row-gap: 56px;
+        }  
+    margin: 0 auto 140px;
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 56px;
+    column-gap:30px;
+
+    .card:first-child{
+        h2{
+            color: $white1;
+        }
+        
+        background: $gradient1;
+    }
+    .card{
+        @media screen and (max-width:1172px) {
+            padding: 56px 32px 56px ;
+            }  
+        border-radius: 16px;
+        box-shadow: 0 25px 50px #06168d15;
+        padding: 64px 32px 80px;
+        position: relative;
+
+        img{
+            position: absolute;
+            top: -28.5px;
+            object-fit: contain;
+        }
+
+        p{
+            @media screen and (max-width:1172px) {
+                margin: 16px 0;
+                }
+            margin:24px 0;
+        }
+
+        a{
+            @media screen and (max-width:1172px) {
+                bottom: 32px;
+                }
+            color: $color4;
+            position: absolute;
+            bottom: 40px;
+            transition: 0.3s ease;
+            &:hover{
+                opacity: 0.8;
+            }
+
+        }
+    }
+}

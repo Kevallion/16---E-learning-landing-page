@@ -1,0 +1,66 @@
+header {
+  margin: 39px auto 226px;
+  max-width: 1110px;
+
+  @media screen and (max-width:1172px) {
+    margin: 24px auto 186px;
+    max-width: 689px;
+    }  
+
+  &::after{
+    @media screen and (max-width:1172px) {
+        background:  url(../images/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 640.71px;
+        height: 640px;
+        right: -235px;
+        top: -50px;
+    }
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:  url(../images/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: container;
+    width: 991.63px;
+    height: 936.92px;
+    right: -270px;
+    top: -180px;
+  }  
+  nav {
+    @media screen and (max-width:1172px) {
+       margin-bottom: 99px;
+    }  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:186px;
+
+    img{
+        object-fit: contain;
+    }
+
+    button{
+        background-color: $color2;
+        cursor: pointer;
+    }
+  }
+
+  .header-content{
+    @media screen and (max-width:1172px) {
+        max-width: 398px;
+        }  
+    max-width: 457px;
+    p{
+        @media screen and (max-width:1172px) {
+            margin: 25px 0;
+        }  
+        margin: 29px 0 40px;
+        
+    }
+
+    button{
+        background: $gradient1;
+    }
+  }
+}
