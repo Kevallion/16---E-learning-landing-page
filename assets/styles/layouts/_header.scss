@@ -1,11 +1,16 @@
 header {
   margin: 39px auto 226px;
   max-width: 1110px;
-
   @media screen and (max-width:1172px) {
     margin: 24px auto 186px;
     max-width: 689px;
-    }  
+    } 
+    
+    @media screen and (max-width:764px) {
+      margin: 16px auto 0;
+      max-width: 343px;
+      position: relative;
+    }
 
   &::after{
     @media screen and (max-width:1172px) {
@@ -17,12 +22,28 @@ header {
         right: -235px;
         top: -50px;
     }
+
+    @media screen and (max-width:764px) {
+      margin: 0 auto;
+      display: block;
+      background:  url(../images/image-hero-mobile.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 331.38px;
+      width: auto;
+      position:relative;
+      z-index: 1;
+      top: auto;
+      left: 0;
+    }
+
+  
     content: "";
     position: absolute;
     z-index: -1;
     background:  url(../images/image-hero-desktop.png);
     background-repeat: no-repeat;
-    background-size: container;
+    background-size: contain;
     width: 991.63px;
     height: 936.92px;
     right: -270px;
@@ -43,6 +64,7 @@ header {
     button{
         background-color: $color2;
         cursor: pointer;
+       
     }
   }
 
@@ -61,6 +83,9 @@ header {
 
     button{
         background: $gradient1;
+        @media screen and (max-width:764px){
+          margin-bottom:46px;
+        }
     }
   }
 }

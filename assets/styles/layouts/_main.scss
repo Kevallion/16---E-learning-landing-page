@@ -6,7 +6,17 @@ main{
         grid-template-rows: repeat(3,1fr);
         column-gap: 10px;
         row-gap: 56px;
-        }  
+        }
+        
+        @media screen and (max-width:764px) {
+            margin: 0 auto 80px;
+            max-width: 343px;
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+
     margin: 0 auto 140px;
     max-width: 1110px;
     display: grid;

@@ -31,12 +31,17 @@ $font1: Jakarta, sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
 
     @media screen and (max-width:1172px) {
         @include fontStyle(16px, 500, 26px);
     }
+
+  
 
     font-family: $font1;
     @include fontStyle(18px, 500, 28px);
